@@ -71,7 +71,7 @@
     <div
       class="hind-madurai-font bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex items-center justify-center text-center text-white py-6 px-4 md:py-8 md:px-[60px]"
     >
-      <div>
+      <div class="hind-madurai-font">
         <div class="flex items-center justify-center mb-4">
           <img
             class="w-[60px] md:w-[92px]"
@@ -92,16 +92,19 @@
     <div class="bg-[#f5fff6] p-[50px]">
       <div class="grid grid-cols-4 gap-8">
         <!-- cards container -->
-        <div class="col-span-3 border-2 border-red-500">
+        <div class="col-span-3">
           <!-- cards -->
-          <div class="">
-            <div class="p-8 bg-white rounded-xl shadow-md border-2">
+          <div class="grid grid-cols-3 gap-7">
+            <!-- 1 -->
+            <div class="p-8 bg-white rounded-xl shadow-md">
               <div class="flex items-center justify-between mb-4">
                 <div class="w-[60px] bg-[#ffe3e2] p-2 rounded-2xl">
                   <img src="./assets/emergency.png" alt="" />
                 </div>
                 <div>
-                  <span class="material-icons"> favorite_border </span>
+                  <span class="material-icons text-gray-500 cursor-pointer">
+                    favorite_border
+                  </span>
                 </div>
               </div>
               <div>
@@ -109,14 +112,294 @@
                 <p>National Emergency</p>
 
                 <h1 class="text-3xl font-bold mt-6">999</h1>
-                <div class="bg-[#f2f2f2] py-2 px-4 w-[50px] rounded-full">All</div>
+                <div class="bg-[#f2f2f2] py-2 px-4 w-fit rounded-full">All</div>
               </div>
               <!-- buttons -->
               <div class="flex items-center justify-between mt-4 gap-2">
-                <button class="flex items-center justify-center gap-2 border-1 border-[#d4d6d5] p-4 rounded-lg w-[50%] ">
+                <button
+                  class="flex items-center justify-center gap-2 border-1 border-[#d4d6d5] p-4 rounded-lg w-[50%]"
+                >
                   <span class="material-icons"> content_copy </span> Copy
                 </button>
-                <button class="flex items-center justify-center gap-2 bg-[#00A63E] text-white p-4 rounded-lg w-[50%]">
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#00A63E] text-white p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> call </span> Call
+                </button>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="p-8 bg-white rounded-xl shadow-md">
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-[60px] bg-[#DFEFFF] p-2 rounded-2xl">
+                  <img src="./assets/police.png" alt="" />
+                </div>
+                <div>
+                  <span class="material-icons text-gray-500 cursor-pointer">
+                    favorite_border
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold">Police Helpline Number</h1>
+                <p>Police Helpline</p>
+
+                <h1 class="text-3xl font-bold mt-6">999</h1>
+                <div class="bg-[#f2f2f2] py-2 px-4 w-fit rounded-full">Police</div>
+              </div>
+              <!-- buttons -->
+              <div class="flex items-center justify-between mt-4 gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 border-1 border-[#d4d6d5] p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> content_copy </span> Copy
+                </button>
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#00A63E] text-white p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> call </span> Call
+                </button>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="p-8 bg-white rounded-xl shadow-md">
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-[60px] bg-[#ffe3e2] p-2 rounded-2xl">
+                  <img src="./assets/fire-service.png" alt="" />
+                </div>
+                <div>
+                  <span class="material-icons text-gray-500 cursor-pointer">
+                    favorite_border
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold">Fire Service Number</h1>
+                <p>Fire Service</p>
+
+                <h1 class="text-3xl font-bold mt-6">999</h1>
+                <div class="bg-[#f2f2f2] py-2 px-4 w-fit rounded-full">
+                  Fire
+                </div>
+              </div>
+              <!-- buttons -->
+              <div class="flex items-center justify-between mt-4 gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 border-1 border-[#d4d6d5] p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> content_copy </span> Copy
+                </button>
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#00A63E] text-white p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> call </span> Call
+                </button>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="p-8 bg-white rounded-xl shadow-md">
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-[60px] bg-[#ffe3e2] p-2 rounded-2xl">
+                  <img src="./assets/ambulance.png" alt="" />
+                </div>
+                <div>
+                  <span class="material-icons text-gray-500 cursor-pointer">
+                    favorite_border
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold">Ambulance Service</h1>
+                <p>Ambulance</p>
+
+                <h1 class="text-3xl font-bold mt-6">1994-999999</h1>
+                <div class="bg-[#f2f2f2] py-2 px-4 w-fit rounded-full">
+                  Health
+                </div>
+              </div>
+              <!-- buttons -->
+              <div class="flex items-center justify-between mt-4 gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 border-1 border-[#d4d6d5] p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> content_copy </span> Copy
+                </button>
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#00A63E] text-white p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> call </span> Call
+                </button>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="p-8 bg-white rounded-xl shadow-md">
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-[60px] bg-[#ffe3e2] p-2 rounded-2xl">
+                  <img src="./assets/emergency.png" alt="" />
+                </div>
+                <div>
+                  <span class="material-icons text-gray-500 cursor-pointer">
+                    favorite_border
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold">Women & Child Helpline</h1>
+                <p>Women & Child Helpline</p>
+
+                <h1 class="text-3xl font-bold mt-6">109</h1>
+                <div class="bg-[#f2f2f2] py-2 px-4 w-fit rounded-full">
+                  Help
+                </div>
+              </div>
+              <!-- buttons -->
+              <div class="flex items-center justify-between mt-4 gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 border-1 border-[#d4d6d5] p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> content_copy </span> Copy
+                </button>
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#00A63E] text-white p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> call </span> Call
+                </button>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="p-8 bg-white rounded-xl shadow-md">
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-[60px] bg-[#ffe3e2] p-2 rounded-2xl">
+                  <img src="./assets/emergency.png" alt="" />
+                </div>
+                <div>
+                  <span class="material-icons text-gray-500 cursor-pointer">
+                    favorite_border
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold">Anti-Corruption Helpline</h1>
+                <p>Anti-Corruption Helpline</p>
+
+                <h1 class="text-3xl font-bold mt-6">106</h1>
+                <div class="bg-[#f2f2f2] py-2 px-4 w-fit rounded-full">
+                  Govt.
+                </div>
+              </div>
+              <!-- buttons -->
+              <div class="flex items-center justify-between mt-4 gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 border-1 border-[#d4d6d5] p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> content_copy </span> Copy
+                </button>
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#00A63E] text-white p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> call </span> Call
+                </button>
+              </div>
+            </div>
+            <!-- 7 -->
+            <div class="p-8 bg-white rounded-xl shadow-md">
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-[60px] bg-[#ffe3e2] p-2 rounded-2xl">
+                  <img src="./assets/emergency.png" alt="" />
+                </div>
+                <div>
+                  <span class="material-icons text-gray-500 cursor-pointer">
+                    favorite_border
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold">Electricity Helpline</h1>
+                <p>Electricity Outage</p>
+
+                <h1 class="text-3xl font-bold mt-6">16216</h1>
+                <div class="bg-[#f2f2f2] py-2 px-4 w-fit rounded-full">
+                  Electricity
+                </div>
+              </div>
+              <!-- buttons -->
+              <div class="flex items-center justify-between mt-4 gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 border-1 border-[#d4d6d5] p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> content_copy </span> Copy
+                </button>
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#00A63E] text-white p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> call </span> Call
+                </button>
+              </div>
+            </div>
+            <!-- 8 -->
+            <div class="p-8 bg-white rounded-xl shadow-md">
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-[60px] bg-[#ffe3e2] p-2 rounded-2xl">
+                  <img src="./assets/emergency.png" alt="" />
+                </div>
+                <div>
+                  <span class="material-icons text-gray-500 cursor-pointer">
+                    favorite_border
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold">Brac Helpline</h1>
+                <p>Brac</p>
+
+                <h1 class="text-3xl font-bold mt-6">16445</h1>
+                <div class="bg-[#f2f2f2] py-2 px-4 w-fit rounded-full">NGO</div>
+              </div>
+              <!-- buttons -->
+              <div class="flex items-center justify-between mt-4 gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 border-1 border-[#d4d6d5] p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> content_copy </span> Copy
+                </button>
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#00A63E] text-white p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> call </span> Call
+                </button>
+              </div>
+            </div>
+            <!-- 9 -->
+            <div class="p-8 bg-white rounded-xl shadow-md">
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-[60px] bg-[#ffe3e2] p-2 rounded-2xl">
+                  <img src="./assets/emergency.png" alt="" />
+                </div>
+                <div>
+                  <span class="material-icons text-gray-500 cursor-pointer">
+                    favorite_border
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-3xl font-bold">Bangladesh Railway Helpline</h1>
+                <p>Bangladesh Railway</p>
+
+                <h1 class="text-3xl font-bold mt-6">163</h1>
+                <div class="bg-[#f2f2f2] py-2 px-4 w-fit rounded-full">
+                  Travel
+                </div>
+              </div>
+              <!-- buttons -->
+              <div class="flex items-center justify-between mt-4 gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 border-1 border-[#d4d6d5] p-4 rounded-lg w-[50%]"
+                >
+                  <span class="material-icons"> content_copy </span> Copy
+                </button>
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#00A63E] text-white p-4 rounded-lg w-[50%]"
+                >
                   <span class="material-icons"> call </span> Call
                 </button>
               </div>
