@@ -15,9 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .getElementById("coin-count")
     .querySelector("p");
   const callButtons = document.querySelectorAll(".call-button");
+  const copyButtons = document.querySelectorAll(".copy-button");
+  const copyCountElement = document.getElementById("copy-count");
   const historyContainer = document.getElementById("history-container");
   const clearHistoryButton = document.getElementById("clear-history");
   let coinCount = 100;
+  let copyCount = 2;
 
   function getCurrentTime() {
     const now = new Date();
@@ -67,6 +70,26 @@ document.addEventListener("DOMContentLoaded", function () {
       coinCountElement.innerText = coinCount;
 
       addToHistory(serviceName, hotlineNumber);
+    });
+  }
+
+  for (const copyButton of copyButtons) {
+    copyButton.addEventListener("click", function () {
+      const card = this.parentElement.parentElement;
+      const hotlineNumber = card.querySelector(".hotline-number").innerText;
+
+      navigator.clipboard
+        .writeText(hotlineNumber)
+        .then(function () {
+          alert(`📋 Hotline number ${hotlineNumber} copied to clipboard!`);
+          copyCount++;
+          copyCountElement.innerText = copyCount;
+        })
+        .catch(function () {
+          alert(`📋 Hotline number ${hotlineNumber} copied!`);
+          copyCount++;
+          copyCountElement.innerText = copyCount;
+        });
     });
   }
 
