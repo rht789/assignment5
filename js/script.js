@@ -1,4 +1,3 @@
-// Heart icon functionality
 document.addEventListener("DOMContentLoaded", function () {
   const heartCountElement = document.getElementById("heart-count");
   const hearts = document.querySelectorAll(".heart-icon");
@@ -59,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      const card = this.parentElement.parentElement;
+      const card = callButton.parentElement.parentElement;
       const serviceName = card.querySelector(".service-name").innerText;
       const hotlineNumber = card.querySelector(".hotline-number").innerText;
 
@@ -75,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   for (const copyButton of copyButtons) {
     copyButton.addEventListener("click", function () {
-      const card = this.parentElement.parentElement;
+      const card = copyButton.parentElement.parentElement;
       const hotlineNumber = card.querySelector(".hotline-number").innerText;
 
       navigator.clipboard
